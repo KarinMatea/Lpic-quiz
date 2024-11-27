@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LPIC 1 Quiz</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="/static/styles.css" rel="stylesheet">
+    <!-- SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Custom JS -->
+    <script src="/static/popup.js" defer></script>
+</head>
+<body class="bg-dark text-light">
+    <!-- Linux-Logo -->
+    <a href="/">
+        <img src="/static/tux.png" alt="Linux Logo" id="linux-logo">
+    </a>
+
+    <div class="container mt-5">
+        <h1>LPIC 1 Quiz</h1>
+        <div id="terminal-animation">
+            <p>Starte Quiz<span id="blinking-cursor">_</span></p>
+        </div>
+        <div class="row">
+            <!-- Fragenbereich -->
+            <div class="col-md-8">
+                <div id="progress" class="text-center mb-4"></div>
+                <div id="quiz-container"></div>
+            </div>
+            <!-- Markierte Fragen & Statistiken -->
+            <div class="col-md-4">
+                <h4 class="text-warning">Markierte Fragen:</h4>
+                <ul id="marked-questions-list" class="list-group"></ul>
+                <hr>
+                <h4 class="text-info">Statistiken:</h4>
+                <p id="stats-correct" class="text-success">Richtig: 0</p>
+                <p id="stats-wrong" class="text-danger">Falsch: 0</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

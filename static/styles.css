@@ -1,0 +1,101 @@
+/* Allgemeines Layout */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #1d1f21; /* Terminal-Hintergrund */
+    color: #c5c8c6;
+}
+
+/* Überschrift */
+h1 {
+    font-family: 'Ubuntu Mono', monospace;
+    font-weight: bold;
+    color: #00ff00; /* Terminal-Grün */
+    text-shadow: 0 0 10px #00ff00;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Linux-Logo */
+#linux-logo {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 100px; /* Neue Breite */
+    height: auto; /* Höhe wird proportional zur Breite angepasst */
+    z-index: 1000;
+    transition: transform 0.2s ease-in-out;
+}
+
+#linux-logo:hover {
+    transform: scale(1.1); /* Vergrößert das Logo beim Hover */
+    cursor: pointer;
+}
+
+
+/* Fragen und Fortschritt */
+h3 {
+    color: #81a2be; /* Blau */
+    margin-bottom: 15px;
+}
+
+#progress {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Buttons */
+button {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    background-color: #373b41; /* Dunkles Grau */
+    color: #c5c8c6; /* Helle Schrift */
+    border: 1px solid #81a2be;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #00ff00; /* Grün */
+    color: #1d1f21; /* Schwarz */
+    border-color: #00ff00;
+    box-shadow: 0 0 10px #00ff00;
+}
+
+/* Fortschrittsbalken */
+.progress {
+    height: 20px;
+    background-color: #373b41;
+    border: 1px solid #81a2be;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background-color: #00ff00; /* Terminal-Grün */
+    transition: width 0.5s ease;
+}
+.badge {
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.badge.bg-success {
+    background-color: #00ff00;
+    color: #1d1f21;
+}
+
+.badge.bg-info {
+    background-color: #81a2be;
+    color: #1d1f21;
+}
+
+.badge.bg-secondary {
+    background-color: #c5c8c6;
+    color: #1d1f21;
+}

@@ -1,0 +1,20 @@
+[
+    {
+        "question": "Was macht der Befehl `ls` in Linux?",
+        "options": ["Zeigt Dateien im aktuellen Verzeichnis an", "Löscht Dateien", "Kopiert Dateien", "Wechselt das Verzeichnis"],
+        "answer": 0,
+        "explanation": "Der Befehl `ls` listet Dateien und Verzeichnisse im aktuellen Arbeitsverzeichnis auf."
+    },
+    {
+        "question": "Welcher Befehl wird verwendet, um Dateien zu verschieben?",
+        "options": ["mv", "cp", "rm", "touch"],
+        "answer": 0,
+        "explanation": "`mv` wird verwendet, um Dateien oder Verzeichnisse zu verschieben oder umzubenennen."
+    },
+    {
+        "question": "Was macht der Befehl `pwd`?",
+        "options": ["Zeigt den aktuellen Pfad", "Ändert das Verzeichnis", "Listet Dateien auf", "Beendet die Sitzung"],
+        "answer": 0,
+        "explanation": "Der Befehl `pwd` zeigt den absoluten Pfad des aktuellen Arbeitsverzeichnisses an."
+    }
+]
