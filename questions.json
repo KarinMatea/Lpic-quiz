@@ -108,5 +108,115 @@
         ],
         "answer": 2,
         "explanation": "Das Sourcing einer Datei in der Shell-Umgebung bedeutet, dass ihre Befehle innerhalb der aktuellen Shell-Sitzung ausgeführt werden, wodurch alle an der Datei vorgenommenen Änderungen sofort wirksam werden."
+    },
+    {
+        "question": "Welche Datei enthält verschlüsselte Benutzerkennwörter in Linux?",
+        "options": [
+            "/etc/passwd",
+            "/etc/group",
+            "/etc/shadow",
+            "/etc/gshadow"
+        ],
+        "answer": 2,
+        "explanation": "Die Datei '/etc/shadow' enthält verschlüsselte Benutzerkennwörter in Linux."
+    },
+    {
+        "question": "Welcher Befehl wird zum Ändern eines Benutzerkontos in Linux verwendet?",
+        "options": [
+            "Benutzermodifizieren",
+            "Modi",
+            "usermod",
+            "edituser"
+        ],
+        "answer": 2,
+        "explanation": "Der Befehl 'usermod' wird verwendet, um ein Benutzerkonto in Linux zu ändern."
+    },
+    {
+        "question": "Welche Option des Befehls 'usermod' wird verwendet, um die Anmelde-Shell eines Benutzerkontos zu ändern?",
+        "options": [
+            "-s",
+            "-l",
+            "-c",
+            "-a"
+        ],
+        "answer": 0,
+        "explanation": "Die Option '-s' des Befehls 'usermod' wird verwendet, um die Anmelde-Shell eines Benutzerkontos zu ändern."
+    },
+    {
+        "question": "Welche Datei enthält grundlegende Informationen zu Gruppen in Linux?",
+        "options": [
+            "/etc/passwd",
+            "/etc/group",
+            "/etc/shadow",
+            "/etc/gshadow"
+        ],
+        "answer": 1,
+        "explanation": "Die Datei '/etc/group' enthält grundlegende Informationen zu Gruppen in Linux."
+    },
+    {
+        "question": "Welche Datei ist für die Konfiguration des Resolvers in Linux verantwortlich?",
+        "options": [
+            "/etc/resolv.conf",
+            "/etc/hostname",
+            "/etc/hosts",
+            "/etc/nsswitch.conf"
+        ],
+        "answer": 0,
+        "explanation": "Die Datei '/etc/resolv.conf' ist für die Konfiguration des Resolvers in Linux verantwortlich und gibt DNS-Serverinformationen an."
+    },
+    {
+        "question": "Was ist der Standardnetzwerkport für den Zugriff auf die CUPS-Weboberfläche?",
+        "options": [
+            "80/TCP",
+            "443/TCP",
+            "631/TCP",
+            "8080/TCP"
+        ],
+        "answer": 2,
+        "explanation": "Der Standardnetzwerkport für den Zugriff auf die CUPS-Weboberfläche ist 631/TCP."
+    },
+    {
+        "question": "Welche Datei enthält die Konfiguration für die Loopback-Schnittstelle?",
+        "options": [
+            "/etc/network/interfaces",
+            "/etc/hosts",
+            "/etc/resolv.conf",
+            "/etc/nsswitch.conf"
+        ],
+        "answer": 0,
+        "explanation": "Die Datei '/etc/network/interfaces' enthält die Konfiguration für die Loopback-Schnittstelle."
+    },
+    {
+        "question": "Welche Funktion, die in Gnome und KDE vorhanden ist, ermöglicht es, Tastenkombinationen Taste für Taste einzugeben?",
+        "options": [
+            "Festsitzende Tasten",
+            "Langsame Tasten",
+            "Maustasten",
+            "Prellende Tasten"
+        ],
+        "answer": 0,
+        "explanation": "Mit der Einrastfunktion können Benutzer Tastenkombinationen einzeln eingeben, was besonders für Benutzer mit eingeschränkter Mobilität hilfreich ist. Diese Funktion ist sowohl in Gnome als auch in KDE verfügbar."
+    },
+    {
+        "question": "Mit welchem Befehl werden Netzwerkschnittstellen in einem Linux-System aufgelistet?",
+        "options": [
+            "netstat",
+            "ifconfig",
+            "ip",
+            "arp"
+        ],
+        "answer": 2,
+        "explanation": "Der Befehl 'ip' wird verwendet, um Routing, Geräte, Policy-Routing und Tunnel in einem Linux-System anzuzeigen und zu bearbeiten."
+    },
+    {
+        "question": "Welche Datei definiert den statischen Hostnamen des Systems?",
+        "options": [
+            "/etc/resolv.conf",
+            "/etc/hostname",
+            "/etc/hosts",
+            "/etc/network/interfaces"
+        ],
+        "answer": 1,
+        "explanation": "Die Datei '/etc/hostname' speichert den statischen Hostnamen des Systems."
     }
 ]
