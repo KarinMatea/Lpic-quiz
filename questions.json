@@ -1,20 +1,112 @@
 [
     {
-        "question": "Was macht der Befehl `ls` in Linux?",
-        "options": ["Zeigt Dateien im aktuellen Verzeichnis an", "Löscht Dateien", "Kopiert Dateien", "Wechselt das Verzeichnis"],
-        "answer": 0,
-        "explanation": "Der Befehl `ls` listet Dateien und Verzeichnisse im aktuellen Arbeitsverzeichnis auf."
+        "question": "Was ist der Hauptzweck von Startskripten in der Linux-Shell-Umgebung?",
+        "options": [
+            "Um Benutzerbefehle auszuführen.",
+            "Um die Umgebung der Sitzung anzupassen.",
+            "Zur Verwaltung von Systemprozessen.",
+            "Um Dateivorgänge zu erleichtern."
+        ],
+        "answer": 1,
+        "explanation": "Startskripte in der Linux-Shell-Umgebung werden verwendet, um die Umgebung der Sitzung anzupassen, indem Variablen, Aliase und Funktionen entsprechend den Benutzereinstellungen festgelegt werden."
     },
     {
-        "question": "Welcher Befehl wird verwendet, um Dateien zu verschieben?",
-        "options": ["mv", "cp", "rm", "touch"],
-        "answer": 0,
-        "explanation": "`mv` wird verwendet, um Dateien oder Verzeichnisse zu verschieben oder umzubenennen."
+        "question": "Welche Shell ist der De-facto-Standard für die meisten Linux-Distributionen?",
+        "options": [
+            "Korn Shell (ksh)",
+            "C-Shell (csh)",
+            "Bourne Again Shell (Bash)",
+            "Z-Shell (zsh)"
+        ],
+        "answer": 2,
+        "explanation": "Bash ist die Standard-Shell für die meisten Linux-Distributionen und wird aufgrund ihrer umfangreichen Funktionen und Kompatibilität häufig verwendet."
     },
     {
-        "question": "Was macht der Befehl `pwd`?",
-        "options": ["Zeigt den aktuellen Pfad", "Ändert das Verzeichnis", "Listet Dateien auf", "Beendet die Sitzung"],
+        "question": "Welche Datei legt systemweite Umgebungsvariablen für Login-Shells in Linux fest?",
+        "options": [
+            "/etc/bash.bashrc",
+            "/etc/profile",
+            "~/.bashrc",
+            "~/.bash_profile"
+        ],
+        "answer": 1,
+        "explanation": "Die Datei /etc/profile ist die systemweite .profile-Datei für Anmelde-Shells, die beim Anmelden Umgebungsvariablen für alle Benutzer festlegt."
+    },
+    {
+        "question": "Mit welchem ​​Befehl lässt sich der aktuell verwendete Shell-Typ ermitteln?",
+        "options": [
+            "echo $SHELL",
+            "echo $0",
+            "uname -s",
+            "ps aux | grep-Shell"
+        ],
+        "answer": 1,
+        "explanation": "Der Befehl 'echo $0' druckt den Namen der aktuell verwendeten Shell und gibt an, ob es sich um eine interaktive Login-Shell, eine interaktive Nicht-Login-Shell oder eine nicht-interaktive Shell handelt."
+    },
+    {
+        "question": "Welche Startdatei wird von nicht interaktiven Shells ohne Anmeldung ausgeführt?",
+        "options": [
+            "~/.profile",
+            "/etc/profile",
+            "~/.bashrc",
+            "Keines der oben genannten"
+        ],
+        "answer": 3,
+        "explanation": "Nicht interaktive Shells ohne Login, wie etwa Skripte, führen keine der typischen Startdateien wie ~/.profile oder /etc/profile aus. Stattdessen suchen sie nach der Umgebungsvariable BASH_ENV und führen die durch ihren Wert angegebene Datei aus."
+    },
+    {
+        "question": "Wie kann ein Benutzer sicherstellen, dass an einer Startdatei vorgenommene Änderungen ohne Neustart wirksam werden?",
+        "options": [
+            "Melden Sie sich ab und wieder an.",
+            "Starten Sie die Shell neu.",
+            "Verwenden Sie den Befehl 'source' oder '.'.",
+            "Verwenden Sie den Befehl 'exec'."
+        ],
+        "answer": 2,
+        "explanation": "Der Befehl 'source' oder '.' wird verwendet, um eine Datei innerhalb der aktuellen Shell-Sitzung auszuführen, sodass an der Datei vorgenommene Änderungen sofort wirksam werden, ohne dass ein Neustart der Shell erforderlich ist."
+    },
+    {
+        "question": "Welches Verzeichnis dient als Vorlage für die Dateisystemstruktur neuer Benutzerkonten unter Linux?",
+        "options": [
+            "/etc/skel",
+            "/var/user",
+            "/home/Vorlage",
+            "/usr/Standard"
+        ],
         "answer": 0,
-        "explanation": "Der Befehl `pwd` zeigt den absoluten Pfad des aktuellen Arbeitsverzeichnisses an."
+        "explanation": "Das Verzeichnis /etc/skel enthält Dateien und Verzeichnisse, die in das Home-Verzeichnis neuer Benutzerkonten kopiert werden und als Vorlage für deren anfängliche Umgebung dienen."
+    },
+    {
+        "question": "Welcher Befehl kann, wenn er ohne zusätzliche Optionen oder Parameter verwendet wird, ein neues Benutzerkonto in Linux erstellen und es mit Dateien aus dem Skel-Verzeichnis füllen?",
+        "options": [
+            "Benutzer hinzufügen",
+            "adduser",
+            "Benutzer erstellen",
+            "neuer Benutzer"
+        ],
+        "answer": 1,
+        "explanation": "Mit dem Befehl 'adduser' können Sie in Linux ein neues Benutzerkonto erstellen und dessen Home-Verzeichnis automatisch mit Dateien aus dem Verzeichnis /etc/skel füllen."
+    },
+    {
+        "question": "Mit welchem ​​Befehl werden die Modusbits einer Datei geändert, um sie ausführbar zu machen?",
+        "options": [
+            "chmod",
+            "chown",
+            "chgrp",
+            "chmodx"
+        ],
+        "answer": 0,
+        "explanation": "Mit dem Befehl 'chmod' können Sie die Berechtigungen einer Datei oder eines Verzeichnisses in Linux ändern. Unter anderem können Sie die Datei oder das Verzeichnis durch Hinzufügen des Ausführungsberechtigungsbits ausführbar machen."
+    },
+    {
+        "question": "Was ist der Zweck der Beschaffung einer Datei in der Shell-Umgebung?",
+        "options": [
+            "Um dessen Inhalt anzuzeigen.",
+            "Um es aus dem System zu löschen.",
+            "Um seine Befehle innerhalb der aktuellen Shell-Sitzung auszuführen.",
+            "Um es umzubenennen."
+        ],
+        "answer": 2,
+        "explanation": "Das Sourcing einer Datei in der Shell-Umgebung bedeutet, dass ihre Befehle innerhalb der aktuellen Shell-Sitzung ausgeführt werden, wodurch alle an der Datei vorgenommenen Änderungen sofort wirksam werden."
     }
 ]
